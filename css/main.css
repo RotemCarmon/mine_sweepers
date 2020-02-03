@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Bangers';
+    font-size: 20px;
+}
+
+.main-box {
+    max-width: 600px;
+    height: 850px;
+    position: relative;
+    margin: auto;
+    background: linear-gradient(292deg, rgb(144, 216, 137) 0%, rgba(66, 213, 32, 1) 70%);
+    border-radius: 3%;
+}
+
+h1 {
+    font-size: 70px;
+    margin: auto;
+    height: 90px;
+    padding: 15px 0 10px 30px;
+}
+
+.dash-board {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+.top-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.timer {
+    height: 45px;
+    margin-right: 40px;
+}
+
+.helps {
+    display: flex;
+    flex-direction: row;
+    /* align-items: baseline; */
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+
+.restart {
+    margin-top: 3px;
+    text-align: center;
+    font-size: 40px;
+    cursor: pointer;
+    
+}
+
+.levels {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 500px;
+    background-color: rgba(128, 128, 128, 0.411);
+}
+
+.hints {
+    margin: 10px 0 10px 5px;
+    display: flex;
+    align-items: baseline;
+    height: 45px;
+    width: 220px;
+}
+
+.hint {
+    
+    margin-left: 30px;
+    cursor: pointer;
+    
+}
+
+.safe-click {
+    padding: 10px 10px 0 20px;
+    margin-top: 10px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    width: 140px;
+    height: 40px;
+    box-shadow: 2px 2px cadetblue;
+    background: rgb(155, 181, 229);
+}
+.safe-click:hover{
+    box-shadow: 1px 1px cadetblue;
+    background: rgb(160, 189, 243);
+    
+    
+    
+}
+
+.safe-click span {
+    margin-left:15px;
+    
+}
+
+.levels div {
+    margin: 10px;
+    padding: 10px;
+    height: 40px;
+    width: 90px;
+    text-align: center;
+    box-shadow: 2px 2px cadetblue;
+    background: rgb(155, 181, 229);
+}
+
+.levels div:hover {
+    box-shadow: 1px 1px cadetblue;
+    background: rgb(160, 189, 243);
+
+}
+
+table {
+    margin: auto;
+}
+
+.cell {
+    margin: auto;
+    position: relative;
+    height: 40px;
+    width: 40px;
+    border: 2px solid black;
+    background: radial-gradient(circle, rgba(241, 242, 248, 1) 30%, rgba(62, 221, 246, 1) 100%);
+}
+.cell:hover{
+    border:2px solid rgba(17, 59, 56, 0.568);
+    opacity: 0.9;
+    
+}
+
+.open, .close, .flag {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 36px;
+    width: 36px;
+}
+
+.cell div span {
+    /* mine neighbor count */
+    position: absolute;
+    text-align: center;
+    padding: 8px;
+    height: 36px;
+    width: 36px;
+}
+
+.reveal {
+    background: rgba(167, 179, 11, 0.692);
+}

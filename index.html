@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+    <title>Mind sweeper</title>
+</head>
+
+<body onload="initGame()">
+
+    <div class="main-box">
+        <h1>Mine sweeper</h1>
+
+        <div class="dash-board">
+            <div class="timer">00:00</div>
+            <div class="live">Lives - 3</div>
+            <div class="bestScore">Best Time is - 0</div>
+        </div>
+
+        <div class="top-box">
+            <div class="helps">
+                <div class="hints">
+                    <div class="hint hint1" onclick="getHint('reveal(this)', this)"><img
+                            src="img/message in a bottle.png" /></div>
+                    <div class="hint hint2" onclick="getHint('reveal(this)', this)"><img
+                            src="img/message in a bottle.png" /></div>
+                    <div class="hint hint3" onclick="getHint('reveal(this)', this)"><img
+                            src="img/message in a bottle.png" /></div>
+                </div>
+                <div class="restart" onclick="initGame()">Restart</div>
+                <div class="safe-click" onclick="safeClick(this)"><span>3</span>Safe click </div>
+            </div>
+            <div class="levels">
+                <div class="easy" data-level="0" onclick="getLevel(this)">EASY</div>
+                <div class="hard" data-level="1" onclick="getLevel(this)">HARD</div>
+                <div class="extreme" data-level="2" onclick="getLevel(this)">EXTREME</div>
+            </div>
+        </div>
+        <div class="container"></div>
+    </div>
+
+    <script src="js/stopwatch1.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/util.js"></script>
+</body>
+
+</html>
